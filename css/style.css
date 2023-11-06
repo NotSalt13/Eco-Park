@@ -3,21 +3,21 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url(/Fonts/Oswald-Regular.ttf);
+  src: url(Fonts/Oswald-Regular.ttf);
 }
 
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url(/Fonts/Oswald-Medium.ttf);
+  src: url(Fonts/Oswald-Medium.ttf);
 }
 
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 700;
-  src: url(/Fonts/Oswald-Bold.ttf);
+  src: url(Fonts/Oswald-Bold.ttf);
 }
 
 /* Fonts--------------------------------------------------------------------------------------------------------*/
