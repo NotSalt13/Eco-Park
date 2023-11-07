@@ -14,6 +14,9 @@ $(document).ready(function () {
 
   jQuery("a.scrollto").click(function () {
     $(".header__burger, .header__menu").removeClass("active");
+    if ($("body").hasClass("lock")) {
+      $("body").removeClass("lock");
+    }
     elementClick = jQuery(this).attr("href");
     destination = jQuery(elementClick).offset().top - offset1;
     jQuery("html:not(:animated),body:not(:animated)").animate(
@@ -22,4 +25,6 @@ $(document).ready(function () {
     );
     return false;
   });
+
+  $(".gallery__slider").slick();
 });
