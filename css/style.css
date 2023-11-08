@@ -572,14 +572,87 @@ body {
 
 .slick-list {
   overflow: hidden;
+  margin: 0 -2.5vw;
 }
 
-.slick-track {
+.gallery__item {
+  text-align: center;
+  max-width: auto;
+  max-height: 500px;
+}
+
+.gallery__slider .slick-track {
   display: flex;
 }
 
-.gallery {
+.gallery__item img {
+  background-color: #fff;
   height: 100%;
+  width: 100%;
+}
+
+.gallery__slider {
+  padding: 0 60px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.gallery__item.slick-slide.slick-center {
+  opacity: 1;
+}
+
+.gallery__item.slick-slide {
+  background-color: #000;
+  transition: 1s;
+  opacity: 0.4;
+  margin: 0 2.5vw;
+}
+.gallery__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  border: none;
+  margin-top: -30px;
+}
+
+.gallery__slider .slick-arrow.slick-prev {
+  left: 15px;
+  background: url("../Images/Icons/arrow_l.svg") 0 0 / 100% no-repeat;
+}
+
+.gallery__slider .slick-arrow.slick-next {
+  right: 15px;
+  background: url("../Images/Icons/arrow_r.svg") 0 0 / 100% no-repeat;
+}
+
+.gallery__slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.gallery__slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.gallery__slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.gallery {
   position: relative;
   justify-content: center;
   z-index: 20;
@@ -587,36 +660,20 @@ body {
 
 .gallery__container {
   position: relative;
-  max-width: 1449px;
   height: 100%;
   margin: 0 auto;
 }
 
 .gallery__title {
-  z-index: 200;
   padding-top: 80px;
   font-size: 7vw;
   text-align: center;
   font-weight: 700;
 }
 
-.gallery__slider {
-  margin-top: 40px;
-  position: relative;
-}
-
-.gallery__item {
-  background-color: red;
-  height: 220px;
-  width: 356px;
-}
-
-@media (min-width: 1600px) {
-}
-
-@media (max-width: 1375px) {
-  .gallery__container {
-    max-width: 1000px;
+@media (max-width: 1240px) {
+  .gallery__item.slick-slide {
+    opacity: 1;
   }
 }
 
@@ -627,9 +684,16 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .gallery__slider {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 576px) {
   .gallery__title {
     font-size: 54px;
   }
 }
-/* Gallerey-------------------------------------------------------------------------------------------------------- */
+
+/* Gallery-------------------------------------------------------------------------------------------------------- */

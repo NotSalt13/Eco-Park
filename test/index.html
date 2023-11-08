@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .wrapper {
+        min-height: 100%;
+      }
+
+      .slick-list {
+        overflow: hidden;
+      }
+
+      .gallery__item {
+        text-align: center;
+        margin: 0 45px !important;
+      }
+
+      .gallery__slider .slick-track {
+        display: flex;
+      }
+
+      .gallery__item img {
+        background-color: #fff;
+        padding: 10px;
+        height: 360px;
+        /* max-width: 630px; */
+      }
+
+      .gallery__slider {
+        padding: 0 60px;
+        margin-top: 80px;
+        position: relative;
+      }
+
+      .gallery__item.slick-slide.slick-center {
+        opacity: 1;
+      }
+
+      .gallery__item.slick-slide {
+        transition: 1s;
+        opacity: 0.4;
+      }
+      .gallery__slider .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 50;
+        font-size: 0;
+        width: 30px;
+        height: 60px;
+        border: none;
+        margin-top: -30px;
+      }
+
+      .gallery__slider .slick-arrow.slick-prev {
+        left: 15px;
+        background: url("../Images/Icons/arrow_l.svg") 0 0 / 100% no-repeat;
+      }
+
+      .gallery__slider .slick-arrow.slick-next {
+        right: 15px;
+        background: url("../Images/Icons/arrow_r.svg") 0 0 / 100% no-repeat;
+      }
+
+      .gallery__slider .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .gallery__slider .slick-dots li {
+        list-style: none;
+        margin: 0 10px;
+      }
+
+      .gallery__slider .slick-dots li.slick-active button {
+        background-color: transparent;
+        border: 1px solid #fff;
+      }
+
+      .gallery__slider .slick-dots button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+
+      .gallery {
+        position: relative;
+        justify-content: center;
+        z-index: 20;
+      }
+
+      .gallery__container {
+        /* min-width: 1420px; */
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="gallery"></div>
+      <div class="gallery__slider">
+        <div class="gallery__item">
+          <h1>1</h1>
+        </div>
+        <div class="gallery__item">
+          <h1>2</h1>
+        </div>
+        <div class="gallery__item">
+          <h1>3</h1>
+        </div>
+        <div class="gallery__item">
+          <h1>4</h1>
+        </div>
+        <div class="gallery__item">
+          <h1>5</h1>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/code.jquery.com_jquery-3.7.1.js"></script>
+    <script src="../JS/slick.min.js"></script>
+    <script lang="JavaSript">
+      $(document).ready(function (){
+               $(".gallery__slider").slick({
+                dots: true,
+                slidesToShow: 3,
+               });
+          })
+    </script>
+  </body>
+</html>

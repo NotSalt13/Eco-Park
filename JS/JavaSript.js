@@ -26,5 +26,20 @@ $(document).ready(function () {
     return false;
   });
 
-  $(".gallery__slider").slick();
+  $(".gallery__slider").slick({
+    dots: true,
+    slidesToShow: 3,
+    centerMode: true,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1240,
+        settings: { slidesToShow: 2, centerMode: false },
+      },
+      {
+        breakpoint: 767,
+        settings: { slidesToShow: 1, centerMode: false },
+      },
+    ],
+  });
 });
