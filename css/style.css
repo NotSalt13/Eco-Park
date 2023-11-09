@@ -331,6 +331,8 @@ body {
   height: 100%;
   position: relative;
   justify-content: center;
+  overflow: hidden;
+  padding-bottom: 200px;
 }
 
 .about__image {
