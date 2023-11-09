@@ -30,7 +30,7 @@ $(document).ready(function () {
     dots: true,
     slidesToShow: 3,
     centerMode: true,
-    autoplay: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1240,
