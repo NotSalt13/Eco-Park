@@ -573,6 +573,7 @@ body {
 .slick-list {
   overflow: hidden;
   margin: 0 -2.5vw;
+  padding: 30px 0 !important;
 }
 
 .gallery__item {
@@ -595,9 +596,11 @@ body {
   padding: 0 60px;
   margin-top: 80px;
   position: relative;
+  height: auto;
 }
 
 .gallery__item.slick-slide.slick-center {
+  transform: scale(1.2);
   opacity: 1;
 }
 
@@ -674,6 +677,9 @@ body {
 @media (max-width: 1240px) {
   .gallery__item.slick-slide {
     opacity: 1;
+  }
+  .slick-list {
+    padding: 0 0 !important;
   }
 }
 
