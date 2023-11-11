@@ -67,7 +67,7 @@ $(document).ready(function () {
       display: {
         left: [],
         middle: ["prev", "infobar", "next"],
-        right: ["slideshow", "download", "thumbs", "Close"],
+        right: ["slideshow", "download", "thumbs", "close"],
       },
     },
 

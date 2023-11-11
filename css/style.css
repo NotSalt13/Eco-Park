@@ -683,6 +683,10 @@ body {
   font-weight: 700;
 }
 
+.f-thumbs__track {
+  justify-content: center;
+}
+
 @media (max-width: 1240px) {
   .gallery__item.slick-slide {
     opacity: 1;
