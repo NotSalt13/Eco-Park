@@ -587,6 +587,7 @@ body {
   max-width: auto;
   max-height: 500px;
   transition: 1s;
+  color: red;
 }
 
 .gallery__slider .slick-track {
