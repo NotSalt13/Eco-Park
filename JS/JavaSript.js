@@ -27,6 +27,8 @@ $(document).ready(function () {
   });
 
   $(".gallery__slider").slick({
+    pauseOnDotsHover: true,
+    waitForAnimate: false,
     lazyLoad: "progressive",
     lazyLoadBuffer: 200,
     lazyLoadOnLoad: true,
@@ -35,7 +37,7 @@ $(document).ready(function () {
     dots: true,
     slidesToShow: 3,
     centerMode: true,
-    autoplay: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1240,
