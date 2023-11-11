@@ -10,7 +10,7 @@ $(document).ready(function () {
     } else {
       offset1 = 72;
     }
-  }, 5000);
+  }, 1000);
 
   jQuery("a.scrollto").click(function () {
     $(".header__burger, .header__menu").removeClass("active");
