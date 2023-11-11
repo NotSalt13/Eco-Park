@@ -63,7 +63,7 @@ $(document).ready(function () {
       display: {
         left: [],
         middle: ["prev", "infobar", "next"],
-        right: ["slideshow", "download", "thumbs", "close"],
+        right: ["slideshow", "download", "thumbs", "Close"],
       },
     },
 
@@ -80,16 +80,6 @@ $(document).ready(function () {
       // Remove the navigation arrows
       Navigation: false,
       transition: "classic",
-    },
-
-    breakpoints: {
-      "(min-width: 768px)": {
-        display: {
-          left: [],
-          middle: ["prev", "infobar", "next"],
-          right: [],
-        },
-      },
     },
   });
 
