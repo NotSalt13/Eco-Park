@@ -27,6 +27,10 @@ $(document).ready(function () {
   });
 
   $(".gallery__slider").slick({
+    lazyLoad: "progressive",
+    lazyLoadBuffer: 200,
+    lazyLoadOnLoad: true,
+    lazyLoadEager: 1,
     infinite: true,
     dots: true,
     slidesToShow: 3,
