@@ -27,6 +27,7 @@ $(document).ready(function () {
   });
 
   $(".gallery__slider").slick({
+    touchThreshold: 10,
     pauseOnDotsHover: true,
     waitForAnimate: false,
     lazyLoad: "progressive",

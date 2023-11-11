@@ -586,6 +586,7 @@ body {
   text-align: center;
   max-width: auto;
   max-height: 500px;
+  transition: 1s;
 }
 
 .gallery__slider .slick-track {
@@ -612,7 +613,6 @@ body {
 
 .gallery__item.slick-slide {
   background-color: #000;
-  transition: 1s;
   opacity: 0.4;
   margin: 0 2.5vw;
   cursor: pointer;
