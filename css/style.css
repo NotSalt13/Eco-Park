@@ -615,7 +615,9 @@ body {
   transition: 1s;
   opacity: 0.4;
   margin: 0 2.5vw;
+  cursor: pointer;
 }
+
 .gallery__slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -659,6 +661,7 @@ body {
   height: 10px;
   background-color: #fff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .gallery {

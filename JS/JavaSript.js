@@ -10,7 +10,7 @@ $(document).ready(function () {
     } else {
       offset1 = 72;
     }
-  }, 1000);
+  }, 5000);
 
   jQuery("a.scrollto").click(function () {
     $(".header__burger, .header__menu").removeClass("active");
@@ -27,10 +27,11 @@ $(document).ready(function () {
   });
 
   $(".gallery__slider").slick({
+    infinite: true,
     dots: true,
     slidesToShow: 3,
     centerMode: true,
-    autoplay: true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 1240,
@@ -42,4 +43,58 @@ $(document).ready(function () {
       },
     ],
   });
+
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    compact: false,
+    idle: false,
+
+    animated: true,
+    showClass: false,
+    hideClass: false,
+
+    dragToClose: true,
+
+    Images: {
+      // Disable animation from/to thumbnail on start/close
+      zoom: false,
+    },
+
+    Toolbar: {
+      display: {
+        left: [],
+        middle: ["prev", "infobar", "next"],
+        right: ["slideshow", "download", "thumbs", "close"],
+      },
+    },
+
+    Thumbs: {
+      type: "classic",
+      Carousel: {
+        center: function () {
+          return this.contentDim > this.viewportDim;
+        },
+      },
+    },
+
+    Carousel: {
+      // Remove the navigation arrows
+      Navigation: false,
+      transition: "classic",
+    },
+
+    breakpoints: {
+      "(min-width: 768px)": {
+        display: {
+          left: [],
+          middle: ["prev", "infobar", "next"],
+          right: [],
+        },
+      },
+    },
+  });
+
+  $(".slick-cloned img").attr("data-fancybox", "null");
+  setInterval(function () {
+    $(".slick-cloned img").attr("data-fancybox", "null");
+  }, 1000);
 });
