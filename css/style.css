@@ -175,12 +175,6 @@ body {
     transition: 0.3s;
   }
 
-  .header__burger:active::before,
-  .header__burger:active::after,
-  .header__burger span:active {
-    background-color: rgb(181, 181, 181);
-  }
-
   .header__burger::before {
     top: 0;
   }
