@@ -1,2 +1,4 @@
 User-Agent: *
 Allow: /
+
+Sitemap: https://notsalt13.github.io/Sitemap.xml
